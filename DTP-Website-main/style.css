@@ -293,7 +293,7 @@ h3{
 }
 
 .testimonial-col .fa{
-    color: #D9D9D9;
+    color: #110705;
 }
 
 @media(max-width: 700px){
@@ -458,4 +458,65 @@ h3{
     outline: none;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+
+/* Scholar Page StyleSheet */
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(17, 7, 5,0.7), rgba(17, 7, 5, 0)), url(images/background\ image\ 3.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1{
+    margin-bottom: 100px;
+}
+
+.sch{
+    width: 80%; /* To have space from the right and left sides */
+    margin: auto; /* To avoid it going to the right */
+    padding-top: 80px; /* Sets 80px space from the header */
+    padding-bottom: 50px; /* Sets 50px space between it and the proceeding element */ 
+}
+
+.sch-col {
+    flex-basis: 48%;
+    padding: 30px;
+    display: flex; /* Align text and image horizontally */
+    flex-direction: column; /* Stack text on top of the image */
+    align-items: center; /* Center align items horizontally */
+    text-align: left; /* Center align text */
+}
+
+.sch-col img {
+    width: 500px;
+    height: 500px;
+}
+
+.sch-col h1 {
+    margin-top: 0; /* Reset top margin for h1 */
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+.sch-col p {
+    padding: 15px 0 25px;
+    margin: 0; /* Reset margin for p */
+}
+
+.background-1 {
+    background-color: #FEF6B9;
+}
+
+.background-2{
+    background-color: #B89D66;
+}
+
+.row-2{
+    display: flex;
+    flex-direction: row-reverse; /* To reverse the order of text and image */
+    justify-content: space-between;
+    align-items: center;
 }
