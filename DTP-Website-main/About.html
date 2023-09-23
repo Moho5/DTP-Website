@@ -12,14 +12,16 @@
 </head>
 
 <body>
-    <!--Hero Row-->
+    <!-- Header -->
     <section class="sub-header">
         <nav>
-            <div class="zoom">
+            <div class="zoom"> <!-- class in the CSS file Makes the logo change size when user hover over it. This is to establish 
+                visibility of system status -->
             <a href="index.html"><img src="images/logo final (1).png"></a>
             </div>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- This is a cross icons for small screen. When user clicks it, 
+                    it will close the menu that has the navigation links. -->
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="About.html">ABOUT</a></li>
@@ -27,17 +29,19 @@
                     <li><a href="Contact Us.html">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- This is a bars icon fro small screen. When user clicks it, 
+                it will open the menu that has the navigation links. -->
         </nav>
         <h1>About Us</h1>   
     </section>
 
     <!--About Us content-->
+    <div class="grey-background">
     <section class="about-us">
         <div class="row">
             <div class="about-col">
                 <h1>Who Are We?</h1>
-                <p class="sub-title">We are an initiative with a mission to inform people about the often underrepresented Islamic scholarship. 
+                <p class="black-color-text">We are an initiative with a mission to inform people about the often underrepresented Islamic scholarship. 
                     Muslims have made substantial contributions to various fields throughout history. On our website, you'll 
                     find a wealth of information, including brief biographies of influential Muslim scholars, detailed descriptions 
                     of their groundbreaking discoveries, and an extensive collection of their notable works and books.</p>
@@ -48,11 +52,12 @@
             </div>
         </div>
     </section>
+    </div>
 
     <!--Footer row-->
     <section class="footer">
         <h4>About Us</h4>
-        <p class="sub-title">We're an initiative dedicated to highlighting underrepresented Islamic scholarship,
+        <p class="black-color-text">We're an initiative dedicated to highlighting underrepresented Islamic scholarship,
             shedding light <br>on the significant contributions made by Muslim scholars to the emperical sceinces.</p>
         <div class="icons">
             <i class="fa fa-facebook"></i>
@@ -60,7 +65,7 @@
             <i class="fa fa-instagram"></i>
             <i class="fa fa-linkedin"></i>
         </div>
-        <p class="sub-title">Made with <i class="fa fa-heart-o"></i> By Mohamed</p>
+        <p class="black-color-text">Made with <i class="fa fa-heart-o"></i> By Mohamed</p>
     </section>
 
 <!--JavaScript for Toggle Menu (For Small Screen)-->

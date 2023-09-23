@@ -1,8 +1,21 @@
-/*Remove defult margin and padding, and set a font family and a fall back font family*/
+/* Remove defult margin and padding, and set a font family and a fall back font family */
 *{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+}
+
+/* Backgrounds colours */
+.pale-yellow-background{
+    background-color: #FEF6B9;
+}
+
+.golden-background{
+    background-color: #B89D66;
+}
+
+.grey-background{
+    background-color: #D9D9D9;
 }
 
 /* Hero row css */
@@ -14,7 +27,8 @@
     background-size: cover;
     position: relative;
 }
-  
+
+/* Zoom in effect for the logo when the user hover's over it. This is for Visibility of system status */
 .zoom {
     transition: transform 0.3s ease; /* Add a transition for the transform property */
 }
@@ -25,8 +39,8 @@
 
 
 nav{
-    display: flex;
-    padding: 2% 6%;
+    display: flex; /* This uses the flexbox layout for the elements in the navigation bar */
+    padding: 2% 6%; 
     justify-content: space-between;
     align-items: center;
 }
@@ -41,10 +55,10 @@ nav img{
 }
 
 .nav-links ul li{
-    list-style: none;
-    display: inline-block;
+    list-style: none; /* This is to remove the dots from the list elements */
+    display: inline-block; /* This is to put all the links on one line */
     padding: 8px 12px;
-    position: relative;
+    position: relative; /* Positioning is based on the element's position not the first parent. */ 
 }
 
 .nav-links ul li a{
@@ -65,12 +79,12 @@ nav img{
 
 .nav-links ul li:hover::after{
     width: 20%;
-}
+} /* Hover effect that makes a line decrease in length from both ends untill it is 20% of its original length. This is for visibility of system status. */
 
 .text-box{
     width: 90%;
     color: #fff;
-    position: absolute;
+    position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -96,7 +110,7 @@ nav img{
     font-size: 13px;
     background: transparent;
     position: relative;
-    cursor: pointer;
+    cursor: pointer; /* Changes the cursor into pointer when user hovers over the button to show that it is a clickble link, visbility of system status. */
 }
 
 .hero-btn:hover{
@@ -124,7 +138,7 @@ nav .fa{
         top: 0;
         right: -200px;
         text-align: left;
-        z-index: 2;
+        z-index: 2; /* To make the links on top of the background */
         transition: 1s;
     }
     nav .fa{
@@ -141,10 +155,7 @@ nav .fa{
 }
 
 /* Why Care row css */
-.back-sc{
-    background-color: #FEF6B9;
-}
-.scholar{
+.why-care-row{
     width: 80%;
     margin: auto;
     text-align: center;
@@ -162,7 +173,7 @@ p{
     padding: 10px;
 }
 
-.sub-title{
+.black-color-text{
     color: black;
 }
 
@@ -176,7 +187,7 @@ h3{
     justify-content: space-between;
 }
 
-.scholar-col{
+.why-care-col{
     flex-basis: 31%;
     background-color: #B89D66;
     border-radius: 10px;
@@ -192,7 +203,7 @@ h3{
     margin: 10px 0;
 }
 
-.scholar-col:hover{
+.why-care-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,3.5);
 }
 
@@ -203,14 +214,14 @@ h3{
 }
 
 /*What's there StyleSheet*/
-.campus{
+.whats-there-row{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
 
-.campus-col{
+.whats-there-col{
     flex-basis: 32%;
     border-radius: 30px;
     margin-bottom: 30px;
@@ -218,7 +229,7 @@ h3{
     overflow: hidden;
 }
 
-.campus-col img{
+.whats-there-col img{
     width: 100%;
     height: 100%;
     display: block;
@@ -328,10 +339,6 @@ h3{
     }
 }
 
-.tes-back{
-    background-color: #B89D66;
-}
-
 /*Footer*/
 .footer{
     width: 100%;
@@ -406,6 +413,7 @@ h3{
     color: #fff;
 }
 
+
 /*Contact Us page StyleSheet*/
 .location{
     width: 80%;
@@ -460,6 +468,7 @@ h3{
     box-sizing: border-box;
 }
 
+
 /* Scholar Page StyleSheet */
 .sub-header{
     height: 50vh;
@@ -506,13 +515,6 @@ h3{
     margin: 0; /* Reset margin for p */
 }
 
-.background-1 {
-    background-color: #FEF6B9;
-}
-
-.background-2{
-    background-color: #B89D66;
-}
 
 .row-2{
     display: flex;

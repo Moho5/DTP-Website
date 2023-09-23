@@ -12,14 +12,16 @@
 </head>
 
 <body>
-    <!--Hero Row-->
+    <!-- Header -->
     <section class="sub-header">
         <nav>
-            <div class="zoom">
+            <div class="zoom"> <!-- class in the CSS file Makes the logo change size when user hover over it. This is to establish 
+                visibility of system status -->
             <a href="index.html"><img src="images/logo final (1).png"></a>
             </div>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- This is a cross icons for small screen. When user clicks it, 
+                    it will close the menu that has the navigation links. -->
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="About.html">ABOUT</a></li>
@@ -27,7 +29,8 @@
                     <li><a href="Contact Us.html">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- This is a bars icon fro small screen. When user clicks it, 
+                it will open the menu that has the navigation links. -->
         </nav>
         <h1>CONTACT US</h1>   
     </section>
@@ -38,6 +41,7 @@
         width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
+    <div class="pale-yellow-background">
     <section class="contact-us">
         <div class="row">
             <div class="contact-col">
@@ -45,7 +49,7 @@
                     <i class="fa fa-home">
                         <span>
                             <h5>46B Cameron Street, Wairoa Hawke's Bay</h5>
-                            <p class="sub-title">Wairoa Hawke's Bay, New Zealand</p>
+                            <p class="black-color-text">Wairoa Hawke's Bay, New Zealand</p>
                         </span>
                     </i>
                 </div>
@@ -53,7 +57,7 @@
                     <i class="fa fa-phone">
                         <span>
                             <h5>(026)4285444</h5>
-                            <p class="sub-title">Monday to Saturday, 10AM to 6PM</p>
+                            <p class="black-color-text">Monday to Saturday, 10AM to 6PM</p>
                         </span>
                     </i>
                 </div>
@@ -61,11 +65,14 @@
                     <i class="fa fa-envelope-o">
                         <span>
                             <h5>Moko@gmail.com</h5>
-                            <p class="sub-title">email us your query</p>
+                            <p class="black-color-text">email us your query</p>
                         </span>
                     </i>
                 </div>
                 </div>
+
+            <!-- This is the send message boxes present in the contact page
+             -->
             <div class="contact-col">
                 <form action="">
                     <input type="text" placeholder="Entre your name" required>
@@ -76,12 +83,14 @@
                 </form>
             </div>
         </div>
-    </section>
+        </section>
+        </div>
+
 
     <!--Footer row-->
     <section class="footer">
         <h4>About Us</h4>
-        <p class="sub-title">We're an initiative dedicated to highlighting underrepresented Islamic scholarship,
+        <p class="black-color-text">We're an initiative dedicated to highlighting underrepresented Islamic scholarship,
             shedding light <br>on the significant contributions made by Muslim scholars to the emperical sceinces.</p>
         <div class="icons">
             <i class="fa fa-facebook"></i>
@@ -89,7 +98,7 @@
             <i class="fa fa-instagram"></i>
             <i class="fa fa-linkedin"></i>
         </div>
-        <p class="sub-title">Made with <i class="fa fa-heart-o"></i> By Mohamed</p>
+        <p class="black-color-text">Made with <i class="fa fa-heart-o"></i> By Mohamed</p>
     </section>
 
 <!--JavaScript for Toggle Menu (For Small Screen)-->
